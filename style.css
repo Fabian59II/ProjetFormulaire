@@ -1,3 +1,9 @@
+body{
+    background-color: wheat;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -9,9 +15,47 @@ input{
     padding: 5px;
     border: 1px solid black;
     margin-bottom: 5px;
+    width: 200px;
+    height: 20px;
     
 }
 
 fieldset{
     text-align: center;
+    background-color: white;
 }
+
+label Prénom{
+    text-align: left;
+}
+
+#envoyer{
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+}
+
+#coordonées{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    
+}
+
+#Sexe_M {
+    width: 30px;
+}
+
+#Sexe_F{
+    width: 20px;
+}
+
+
+
+
+
