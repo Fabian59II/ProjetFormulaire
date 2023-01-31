@@ -16,15 +16,21 @@
             <label for="Nom">Nom</label>
             <input type="text" name="Nom" id="Nom" autofocus required> <br>
             <label for="Age">Age</label>
-            <input type="text" name="Age" id="Age" autofocus required> <br>
+            <input type="number" name="Age" id="Age" autofocus required> <br>
             <label for="Sexe">Sexe</label>
             <input type="text" name="Sexe" id="Sexe" autofocus required> <br>
             <label for="Adresse mail">Adresse mail</label>
             <input type="text" name="Adresse mail" id="adresse mail" autofocus required> <br>
             <label for="Adresse postale"> Code postale</label>
-            <input type="text" name="Adresse postale" id="Adresse postale" autofocus required> <br>
+            <input type="number" name="Adresse postale" id="Adresse postale" autofocus required> <br>
             <label for="Ville">Ville</label>
-            <input type="text" name="Ville" id="Ville" autofocus required> <br>
+            <input list="Villes" type="text" id="Ville" required>
+            <datalist id="Villes">
+                <option value="Wattrelos"></option>
+                <option value="Roubaix"></option>
+                <option value="Tourcoing"></option>
+                <option value="Lille"></option>
+            </datalist>
             <label for="Profession">Profession</label>
             <input type="text" name="Profession" id="Profession" autofocus required> <br>
             <label for="Nationalité">Nationalité</label>
