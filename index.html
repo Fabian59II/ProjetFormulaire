@@ -38,11 +38,23 @@
                 <option value="Roubaix"></option>
                 <option value="Tourcoing"></option>
                 <option value="Lille"></option>
-            </datalist>
+            </datalist> <br>
             <label for="Profession">Profession</label>
-            <input type="text" name="Profession" id="Profession" autofocus required> <br>
+            <input list="Professions" type="text" id="Profession" required> 
+            <datalist id="Professions">
+                <option value="Vendeur"></option>
+                <option value="Agent de sécurité"></option>
+                <option value="coach sportif"></option>
+                <option value="Agent d'acceuil"></option>
+            </datalist> <br>
             <label for="Nationalité">Nationalité</label>
-            <input type="text" name="Nationalité" id="Nationalité" autofocus required> <br>
+            <input list="Nationalités" type="text" id="Nationalité" required>
+            <datalist id="Nationalités">
+                <option value="Français"></option>
+                <option value="Anglais"></option>
+                <option value="Néerlandais"></option>
+                <option value="Espagnol"></option>
+            </datalist> <br>
             <label for="Date de naissance">Date de naissance</label>
             <input type="text" name="Date de naissance" id="Date de naissance" autofocus required> <br>
             <label for="Pays de naissance">Pays de naissance</label>
