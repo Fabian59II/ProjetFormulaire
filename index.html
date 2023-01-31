@@ -24,7 +24,13 @@
             <label for="Adresse mail">Adresse mail</label>
             <input type="text" name="Adresse mail" id="adresse mail" autofocus required> <br>
             <label for="Adresse postale"> Code postale</label>
-            <input type="number" name="Adresse postale" id="Adresse postale" autofocus required> <br>
+            <input list="Adresses postale" type="text" id="Adresse postale" required> <br>
+            <datalist id="Adresses postale">
+                <option value="59150"></option>
+                <option value="59000"></option>
+                <option value="59200"></option>
+                <option value="59100"></option>
+            </datalist>
             <label for="Ville">Ville</label>
             <input list="Villes" type="text" id="Ville" required>
             <datalist id="Villes">
