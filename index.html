@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
+
 <body>
     <section>
-        <form action="" method="">
+        <form action="" method="get">
             <fieldset>
-            <legend>Vos coordonnées</legend>
-            <label for="Prénom">Prénom</label>
-            <input type="text" name="Prénom" id="Prénom" autofocus required> <br>
-            <label for="Nom">Nom</label>
-            <input type="text" name="Nom" id="Nom" autofocus required> <br>
-            <label for="Age">Age</label>
-            <input type="number" name="Age" id="Age" autofocus required> <br>
-            <label for="Sexe M">Masculin</label>
-            <input type="checkbox" name="Sexe M" id="Sexe M"required>
-            <label for="Sexe F">Féminin</label>
-            <input type="checkbox" name="Sexe F" id="Sexe F" required> <br>
-            <label for="Adresse mail">Adresse mail</label>
-            <input type="text" name="Adresse mail" id="adresse mail" autofocus required> <br>
-            <label for="Adresse postale"> Code postale</label>
-            <input list="Adresses postale" type="text" id="Adresse postale" required> <br>
-            <datalist id="Adresses postale">
-                <option value="59150"></option>
-                <option value="59000"></option>
-                <option value="59200"></option>
-                <option value="59100"></option>
-            </datalist>
-            <label for="Ville">Ville</label>
-            <input list="Villes" type="text" id="Ville" required>
-            <datalist id="Villes">
-                <option value="Wattrelos"></option>
-                <option value="Roubaix"></option>
-                <option value="Tourcoing"></option>
-                <option value="Lille"></option>
-            </datalist> <br>
-            <label for="Profession">Profession</label>
-            <input list="Professions" type="text" id="Profession" required> 
-            <datalist id="Professions">
-                <option value="Vendeur"></option>
-                <option value="Agent de sécurité"></option>
-                <option value="coach sportif"></option>
-                <option value="Agent d'acceuil"></option>
-            </datalist> <br>
-            <label for="Nationalité">Nationalité</label>
-            <input list="Nationalités" type="text" id="Nationalité" required>
-            <datalist id="Nationalités">
-                <option value="Français"></option>
-                <option value="Anglais"></option>
-                <option value="Néerlandais"></option>
-                <option value="Espagnol"></option>
-            </datalist> <br>
-            <label for="Date de naissance">Date de naissance</label>
-            <input type="text" name="Date de naissance" id="Date de naissance" autofocus required> <br>
-            <label for="Pays de naissance">Pays de naissance</label>
-            <input type="text" name="Pays de naissance" id="Pays de naissance" autofocus required> <br>
-            <label for="Numéro de sécurité social">Numéro de sécurité social</label>
-            <input type="text" name="Numéro de sécurité social" id="Numéro de sécurité social" autofocus required> <br>
-            <label for="Numéro de passeport">Numéro de passeport</label>
-            <input type="text" name="Numéro de passeport" id="Numéro de passeport" autofocus required> <br>
-            <label for="Date de délivrance du passeport">Date de délivrance du passeport</label>
-            <input type="text" name="Date de délivrance du passeport" id="Date de délivrance du passeport" autofocus required> <br>
-            <label for="Date de validité du passeport">Date de validité du passeport</label>
-            <input type="text" name="Date de validité du passeport" id="Date de validité du passeport" autofocus required>
+                <legend>Vos coordonnées</legend>
+                <label for="Prénom">Prénom</label>
+                <input type="text" name="Prénom" id="Prénom" autofocus required> <br>
+                <label for="Nom">Nom</label>
+                <input type="text" name="Nom" id="Nom" autofocus required> <br>
+                <label for="Date de naissance">Date de naissance</label>
+                <input type="date" name="Date de naissance" id="Date de naissance" required
+                    min="31/01/2005"> <br>
+                <label for="Age">Age</label>
+                <input type="number" name="Age" id="Age" required
+                    min="18" max="99"> <br>
+                <label for="Sexe M">Masculin</label>
+                <input type="checkbox" name="Sexe M" id="Sexe M" required>
+                <label for="Sexe F">Féminin</label>
+                <input type="checkbox" name="Sexe F" id="Sexe F" required> <br>
+                <label for="Adresse mail">Adresse mail</label>
+                <input type="email" name="Adresse mail" id="adresse mail" autofocus required> <br>
+                <label for="Adresse postale"> Code postale</label>
+                <input list="Adresses postale" type="text" id="Adresse postale" required> <br>
+                <datalist id="Adresses postale">
+                    <option value="59150"></option>
+                    <option value="59000"></option>
+                    <option value="59200"></option>
+                    <option value="59100"></option>
+                </datalist>
+                <label for="Ville">Ville</label>
+                <input list="Villes" type="text" id="Ville" required>
+                <datalist id="Villes">
+                    <option value="Wattrelos"></option>
+                    <option value="Roubaix"></option>
+                    <option value="Tourcoing"></option>
+                    <option value="Lille"></option>
+                </datalist> <br>
+                <label for="Profession">Profession</label>
+                <input list="Professions" type="text" id="Profession" required>
+                <datalist id="Professions">
+                    <option value="Vendeur"></option>
+                    <option value="Agent de sécurité"></option>
+                    <option value="coach sportif"></option>
+                    <option value="Agent d'acceuil"></option>
+                </datalist> <br>
+                <label for="Nationalité">Nationalité</label>
+                <input list="Nationalités" type="text" id="Nationalité" required>
+                <datalist id="Nationalités">
+                    <option value="Français"></option>
+                    <option value="Anglais"></option>
+                    <option value="Néerlandais"></option>
+                    <option value="Espagnol"></option>
+                </datalist> <br>
+                <label for="Pays de naissance">Pays de naissance</label>
+                <input list="pays de naissance" type="text" id="Pays de naissance" required>
+                <datalist id="pays de naissance">
+                    <option value="France"></option>
+                    <option value="Angleterre"></option>
+                    <option value="Pays-bas"></option>
+                    <option value="Espagne"></option>
+                </datalist> <br>
+                <label for="Numéro de sécurité social">Numéro de sécurité social</label>
+                <input type="text" name="Numéro de sécurité social" id="Numéro de sécurité social" autofocus required>
+                <br>
+                <label for="Numéro de passeport">Numéro de passeport</label>
+                <input type="text" name="Numéro de passeport" id="Numéro de passeport" autofocus required> <br>
+                <label for="Date de délivrance du passeport">Date de délivrance du passeport</label>
+                <input type="date" name="Date de délivrance du passeport" id="Date de délivrance du passeport" required> <br>
+                <label for="Date de validité du passeport">Date de validité du passeport</label>
+                <input type="date" name="Date de validité du passeport" id="Date de validité du passeport" required>
             </fieldset>
             <input type="submit" value="Envoyer">
         </form>
     </section>
-    
+
 </body>
+
 </html>
